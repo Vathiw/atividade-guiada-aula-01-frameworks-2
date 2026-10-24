@@ -1,6 +1,6 @@
 # Atividade Guiada — API CRUD de Tarefas com Spring Boot
 
-Projeto desenvolvido para a disciplina **Frameworks 2**, conforme a atividade guiada da Unilavras (Aula 01).
+Projeto desenvolvido para a disciplina **Frameworks 2**
 
 ## Objetivo
 
@@ -14,25 +14,6 @@ Desenvolver uma API REST que permita cadastrar, listar, consultar, atualizar e e
 - Maven
 - JUnit 5 para testes automatizados
 - Postman para requisições HTTP
-
-## Estrutura do projeto
-
-```text
-src/
-├── main/
-│   ├── java/com/example/task_api/
-│   │   ├── TaskApiApplication.java
-│   │   ├── controller/TaskController.java
-│   │   ├── model/Task.java
-│   │   └── repository/TaskRepository.java
-│   └── resources/application.properties
-└── test/java/com/example/task_api/
-    ├── controller/TaskControllerTest.java
-    └── repository/TaskRepositoryTest.java
-postman/
-└── Task_API_CRUD.postman_collection.json
-pom.xml
-```
 
 ## Como executar
 
@@ -140,11 +121,3 @@ Os testes cobrem criação, listagem, busca, atualização, exclusão e resposta
 - Os pacotes foram organizados em `model`, `repository` e `controller`, com nomes consistentes em todas as classes.
 - O endpoint de criação contém a anotação `@PostMapping`, necessária para receber requisições POST.
 - A atividade não solicita persistência em banco de dados, autenticação nem interface gráfica.
-
-## Entrega
-
-Enviar ao professor **somente o endereço do repositório público no GitHub** com o nome:
-
-`atividade-guiada-aula-01-frameworks-2`
-
-Os arquivos deste projeto devem estar na raiz do repositório (o `pom.xml` deve aparecer diretamente na página inicial do repositório).
